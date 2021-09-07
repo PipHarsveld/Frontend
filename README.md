@@ -42,7 +42,7 @@ link naar de website die ik ga maken:
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home | Plant Rebelz  
 Viewport:  
-<img src="images/screenshot-homepagina1.PNG" width="375px" alt="homepagina Plant Rebelz (viewport)">  
+<img src="images/screenshot-homepagina1.png" width="375px" alt="homepagina Plant Rebelz (viewport)">  
 Hele homepage onder elkaar:  
 <img src="images/screenshot-homepagina2.png" width="375px" alt="homepagina Plant Rebelz deel 1">
 
