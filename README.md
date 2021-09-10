@@ -32,7 +32,7 @@ Surface Plane
 
 ## Je website
 
-<details open>
+<details>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
@@ -42,16 +42,16 @@ link naar de website die ik ga maken:
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home | Plant Rebelz  
 Viewport:  
-<img src="images/screenshot-homepagina1.png" width="375px" alt="homepagina Plant Rebelz (viewport)">  
+<img src="images/screenshot-homepagina1.png" width="375px" alt="viewport homepagina Plant Rebelz">  
 Hele homepage onder elkaar:  
-<img src="images/screenshot-homepagina2.png" width="375px" alt="homepagina Plant Rebelz deel 1">
+<img src="images/screenshot-homepagina2.png" width="375px" alt="hele homepagina Plant Rebelz">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Stekjes kopen | Plant Rebelz  
 Viewport:  
-<img src="images/screenshot-stekjeskopen1.png" width="375px" alt="homepagina Plant Rebelz (viewport)">  
+<img src="images/screenshot-stekjeskopen1.png" width="375px" alt="viewport detailpagina Plant Rebelz">  
 Hele homepage onder elkaar:  
-<img src="images/screenshot-stekjeskopen2.png" width="375px" alt="homepagina Plant Rebelz deel 1">
+<img src="images/screenshot-stekjeskopen2.png" width="375px" alt="hele detailpagina Plant Rebelz">
 
  
 </details>
@@ -62,17 +62,17 @@ Hele homepage onder elkaar:
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
-### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+### de homepagina: 
+<img src="images/breakdown-homepagina.jpg" width="375px" alt="breakdown van de homepagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+### de overzichtspagina: 
+<img src="images/breakdown-stekjes.jpg" width="375px" alt="breakdown van de overzichtspagina">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### een dynamisch deel (menu): 
+<img src="images/breakdown-menu.jpg" width="375px" alt="breakdown van een dynamisch deel (het menu)">
 
 </details>
 
