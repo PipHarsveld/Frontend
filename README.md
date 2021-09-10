@@ -241,8 +241,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
+1. Iconen die gebruikt worden op de site van Plant Rebelz: https://themify.me/themify-icons
+2. Uitleg over rel="noopener": https://www.wplounge.nl/rel-noopener-links-wordpress/
 3. ...
 
 </details>
