@@ -220,11 +220,15 @@ header nav ul li figure figcaption{
   padding-bottom: 15%;
 }
 
-
+#homepagina main section:nth-of-type(3) div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 #homepagina main section:nth-of-type(3) img{
   width: 21.04rem;
-  margin: .625rem 1.2rem .625rem 1.2rem;
+  margin: .625rem 0 .625rem 0;
 }
 
 
@@ -250,6 +254,7 @@ header nav ul li figure figcaption{
 #homepagina main section:nth-of-type(4) img{
   width: 21rem;
   margin: 1.5rem 0 0 0;
+  line-height: 0;
 }
 
 #homepagina main section:nth-of-type(4) a{
@@ -298,6 +303,31 @@ header nav ul li figure figcaption{
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 2em;
-
   text-align: center;
+}
+
+
+
+
+
+/*****************/
+/* ZESDE SECTION */
+#homepagina main section:nth-of-type(6){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .2rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+#homepagina main section:nth-of-type(6) p{
+  display: inline-block;
+  font-size: .81rem;
+}
+
+#homepagina main section:nth-of-type(6) img{
+  width: .875rem;
+  height: .875rem;
+  margin: .44rem;
 }
