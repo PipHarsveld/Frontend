@@ -90,7 +90,7 @@ Het coderen is deze week vrij goed gegaan. Ik ben niet tegen al te grote problem
 gelopen en de eerste pagina begint nu echt al te lijken op de site van Plant Rebelz!  
 Wel had ik wat problemen om de content in de roze balk (zie screenshot) zowel  
 horizontaal als verticaal te centreren, maar met wat hulp is dat nu wel gelukt :)  
-<img src="/images/screenshot-roze-balk.png" width="275px" alt="screenshot van een roze balkje met content">
+<img src="images/screenshot-roze-balk.PNG" width="275px" alt="screenshot van een roze balkje met content">
 
 
 ### Verslag van meeting
@@ -120,8 +120,8 @@ Ik had nog wel wat moeite met de achtergrondafbeelding bij de link naar de googl
 reviews (zie afbeelding). In de les heb ik hier vragen over gesteld en nu is het gelukt.  
 Ook had ik wat ruzie met de line-heigt property. Ik had hem op de verkeerde manier  
 gebruikt waardoor alle elementen, en dus ook een afbeelding, een line-heigt kregen.
-<img src="../images/screenshot-link-met-achtergrondafbeelding" width="275px" alt="screenshot van een link met een achtergrondafbeelding">
-<img src="./images/screenshot-code-link-met-achtergrondafbeelding" width="275px" alt="screenshot de bijbehorende code">
+<img src="images/screenshot-link-met-achtergrondafbeelding.PNG" width="275px" alt="screenshot van een link met een achtergrondafbeelding">
+<img src="images/screenshot-code-link-met-achtergrondafbeelding.PNG" width="275px" alt="screenshot de bijbehorende code">
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
