@@ -276,8 +276,6 @@ header nav ul li figure figcaption{
 #homepagina main section:nth-of-type(5){
   background-color: var(--accent-kleur);
   padding: 3.3rem 1.2rem 0 1.2rem;
-  display: flex;
-  flex-direction: column;;
 }
 
 #homepagina main section:nth-of-type(5) p{
@@ -298,6 +296,5 @@ header nav ul li figure figcaption{
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 2em;
-
-  text-align: center;
+  margin: 2.5rem 1.2rem 2rem 0;
 }

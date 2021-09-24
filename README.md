@@ -62,7 +62,7 @@ Hele homepage onder elkaar:
 
 ## Breakdownschets (week 1)
 
-<details open>
+<details>
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de homepagina: 
@@ -82,11 +82,15 @@ Hele homepage onder elkaar:
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het coderen is deze week vrij goed gegaan. Ik ben niet tegen al te grote problemen  
+gelopen en de eerste pagina begint nu echt al te lijken op de site van Plant Rebelz!  
+Wel had ik wat problemen om de content in de roze balk (zie screenshot) zowel  
+horizontaal als verticaal te centreren, maar met wat hulp is dat nu wel gelukt :)  
+<img src="images/screenshot-roze-balk.png" width="275px" alt="screenshot van een roze balkje met content">
 
 
 ### Agenda voor meeting
@@ -102,10 +106,11 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Probeer overal dezelfe waardes te gebruiken (px,em,%,vh,vw etc worden nu allemaal gebruikt)
+- Kijk of het lukt om SVG's in te laden i.p.v. image tag
+- Als je voor elke pagina één ID gebruikt, is het makkelijker te stylen
+- Andere tag gebruiken voor het euro-tekens
+- Er bestaan speciale tags voor reviews
 
 </details>
 
@@ -243,6 +248,6 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
 1. Iconen die gebruikt worden op de site van Plant Rebelz: https://themify.me/themify-icons
 2. Uitleg over rel="noopener": https://www.wplounge.nl/rel-noopener-links-wordpress/
-3. ...
+3. Uitleg over SVG inladen: https://css-tricks.com/using-svg/
 
 </details>
