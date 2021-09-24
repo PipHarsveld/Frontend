@@ -304,6 +304,8 @@ header nav ul li figure figcaption{
   background-position: 50% 50%;
   padding: 2em;
   text-align: center;
+  color: black;
+  margin: 1rem 0 2rem 0;
 }
 
 
