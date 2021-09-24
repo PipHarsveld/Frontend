@@ -333,3 +333,18 @@ header nav ul li figure figcaption{
   height: .875rem;
   margin: .44rem;
 }
+
+
+
+
+
+/**********/
+/* FOOTER */
+/**********/
+
+/*****************/
+/* ZESDE SECTION */
+
+#homepagina footer section nav ul{
+  text-decoration: none;
+}
