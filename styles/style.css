@@ -41,6 +41,14 @@ h3{
   margin: 0 0 1rem 0;
 }
 
+h4{
+  text-decoration: none;
+  font-family: var(--extra-lettertype);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  margin: 0 0 1rem 0;
+}
 
 
 
@@ -110,16 +118,16 @@ header nav ul li:first-of-type{
   margin: .3rem auto auto 1.2rem;
 }
 
-header nav ul li:nth-child(1) img{
+header nav ul li:nth-of-type(1) img{
   width: 8.125rem;
 }
 
-header nav ul li:nth-child(2) img{
+header nav ul li:nth-of-type(2) img{
   width: 1.5rem;
   margin: .75rem .625rem;
 }
 
-header nav ul li:nth-child(3) img{
+header nav ul li:nth-of-type(3) img{
   width: 1.5rem;
   margin: 0 .625rem;
 }
@@ -165,7 +173,7 @@ header nav ul li figure figcaption{
   line-height: 1.7rem;
 }
 
-#homepagina main section:nth-of-type(1) p:nth-child(2){
+#homepagina main section:nth-of-type(1) p:nth-of-type(2){
   margin: 0.5rem auto 0.5rem 1.2rem;
 }
 
@@ -224,6 +232,11 @@ header nav ul li figure figcaption{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+#homepagina main section:nth-of-type(3) a{
+  display: flex;
+  justify-content: center;
 }
 
 #homepagina main section:nth-of-type(3) img{
@@ -294,11 +307,11 @@ header nav ul li figure figcaption{
   line-height: 1.8rem;
 }
 
-#homepagina main section:nth-of-type(5) p:nth-child(3){
+#homepagina main section:nth-of-type(5) p:nth-of-type(2){
   padding: 1.2rem 0 0 0;
 }
 
-#homepagina main section:nth-of-type(5) p:nth-child(4){
+#homepagina main section:nth-of-type(5) p:nth-of-type(3){
   padding: 1.2rem 0 0 0;
 }
 
@@ -378,7 +391,7 @@ header nav ul li figure figcaption{
   margin-bottom: 1rem;
 }
 
-#homepagina footer form input:nth-child(3){
+#homepagina footer form input:nth-of-type(2){
   background-color: var(--accent-kleur);
   font-family: var(--extra-lettertype);
   text-transform: uppercase;
@@ -390,6 +403,46 @@ header nav ul li figure figcaption{
 
 /*******************/
 /* ZEVENDE SECTION */
-#homepagina footer section nav ul{
+footer{
+  margin-bottom: 3.5rem;
+}
+
+footer section nav{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
+
+footer section nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 3rem 1.2rem 0 1.2rem;
+}
+
+footer section nav ul li a{
   text-decoration: none;
+  font-family: var(--basis-lettertype);
+  color: black;
+  font-size: .87rem;
+  margin: 1.2rem 0;
+  display: block;
+}
+
+footer section:nth-of-type(2) h3{
+  font-size: 1.25rem;
+  margin: 2.5rem 1.5rem 0 1.5rem;
+  padding-top: 2rem;
+  letter-spacing: .15rem;
+  border-top: 1px solid #eeeeee;
+}
+
+footer section:nth-of-type(2) div{
+  display: flex;
+  justify-content: center;
+  margin-top: .6rem;
+}
+
+footer section:nth-of-type(2) img{
+  background-color: var(--accent-kleur);
+  padding: .5rem;
+  margin: .3rem;
 }
