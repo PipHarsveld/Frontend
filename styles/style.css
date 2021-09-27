@@ -7,7 +7,8 @@
 :root{
   --basis-lettertype: 'Ubuntu', sans-serif;
   --extra-lettertype: 'Oswald', sans-serif;
-  --accent-kleur: rgba(218, 162, 171, 1);
+  --roze-accent-kleur: rgba(218, 162, 171, 1);
+  --blauwe-accent-kleur: rgba(157, 186, 179, 1);
   --grijze-achtergrond: rgba(245, 245, 245, 1);
 }
 
@@ -18,9 +19,23 @@
 /*******************/
 /* ALGEMENE OPMAAK */
 /*******************/
-main section{
+p{
   font-family: var(--basis-lettertype);
   font-size: 1rem;
+}
+
+a{
+  font-family: var(--basis-lettertype);
+  font-size: 1rem;
+}
+
+h1{
+  text-align: center;
+  font-family: var(--extra-lettertype);
+  text-transform: uppercase;
+  font-size: 2.35rem;
+  letter-spacing: .125rem;
+  margin: 1.6rem 0 1.6rem 0;
 }
 
 h2{
@@ -56,7 +71,7 @@ h4{
 /*****************/
 /* HAMBURGERMENU */
 main nav{
-  background-color: var(--accent-kleur);
+  background-color: var(--roze-accent-kleur);
   position: fixed;
   top: 0;
   right: 0;
@@ -105,12 +120,6 @@ main nav ul li a{
   font-size: 1.1rem;
   letter-spacing: .1rem;
 }
-
-
-
-
-
-
 
 .uitgeklaptMenu{
   transform: translateY(0%);
@@ -173,8 +182,103 @@ header nav ul li figure figcaption{
   text-align: center;
 }
 
+/**********/
+/* FOOTER */
+footer{
+  margin-bottom: 3.5rem;
+}
 
+footer section nav{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+}
 
+footer section nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 3rem 1.2rem 0 1.2rem;
+}
+
+footer section nav ul li a{
+  text-decoration: none;
+  font-family: var(--basis-lettertype);
+  color: black;
+  font-size: .87rem;
+  margin: 1.2rem 0;
+  display: block;
+}
+
+footer section:nth-of-type(2) h3{
+  font-size: 1.25rem;
+  margin: 2.5rem 1.5rem 0 1.5rem;
+  padding-top: 2rem;
+  letter-spacing: .15rem;
+  border-top: 1px solid #eeeeee;
+}
+
+footer section:nth-of-type(2) div{
+  display: flex;
+  justify-content: center;
+  margin-top: .6rem;
+}
+
+footer section:nth-of-type(2) img{
+  padding: .5rem;
+  margin: .3rem;
+}
+
+#homepagina footer section:nth-of-type(2) img{
+  background-color: var(--roze-accent-kleur);
+}
+
+#overzichtspagina footer section:nth-of-type(2) img{
+  background-color: var(--blauwe-accent-kleur);
+}
+
+/*************************/
+/* AANMELDEN NIEUWSBRIEF */
+footer form {
+  font-family: var(--basis-lettertype);
+  margin: 2rem 1.2rem 0 1.2rem;
+}
+
+footer form p{
+  font-size: .95rem;
+  text-align: center;
+  line-height: 1.7rem;
+  margin-top: 3rem;
+}
+
+footer form input{
+  font-family: var(--basis-lettertype);
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+footer form input:first-of-type{
+  background-color: var(--grijze-achtergrond);
+  padding: .4rem .6rem .4rem .6rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer form input:nth-of-type(2){
+  font-family: var(--extra-lettertype);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .09rem;
+  padding: .9rem .6rem .7rem .6rem;
+  font-size: .75rem;
+}
+
+#homepagina footer form input:nth-of-type(2){
+  background-color: var(--roze-accent-kleur);
+}
+
+#overzichtspagina footer form input:nth-of-type(2){
+  background-color: var(--blauwe-accent-kleur);
+}
 
 
 /***************/
@@ -221,13 +325,15 @@ header nav ul li figure figcaption{
 
 
 
+
+
 /******************/
 /* TWEEDE SECTION */
 #homepagina main section:nth-of-type(2){
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-kleur);
+  background-color: var(--roze-accent-kleur);
   padding: .44rem;
   text-align: center;
 }
@@ -293,6 +399,11 @@ header nav ul li figure figcaption{
   padding: 0 0 1rem 0;
 }
 
+#homepagina main section:nth-of-type(4) p:nth-of-type(2){
+  font-weight: bold;
+}
+
+
 #homepagina main section:nth-of-type(4) img{
   width: 100%;
   margin: 1.5rem 0 0 0;
@@ -303,7 +414,6 @@ header nav ul li figure figcaption{
 #homepagina main section:nth-of-type(4) a:first-of-type{
   background-color: #000000;
   color: #FFFFFF;
-  font-family: var(--basis-lettertype);
   font-size: .9rem;
   text-decoration: none;
   padding: .4rem 3.125rem .4rem 3.125rem;
@@ -319,10 +429,12 @@ header nav ul li figure figcaption{
 
 
 
+
+
 /******************/
 /* VIJFDE SECTION */
 #homepagina main section:nth-of-type(5){
-  background-color: var(--accent-kleur);
+  background-color: var(--roze-accent-kleur);
   padding: 3.3rem 1.2rem 0 1.2rem;
   display: flex;
   flex-direction: column;
@@ -385,90 +497,38 @@ header nav ul li figure figcaption{
 
 
 
-/**********/
-/* FOOTER */
-/**********/
+/******************/
+/* STEKJES PAGINA */
+/******************/
 
-/*************************/
-/* AANMELDEN NIEUWSBRIEF */
-#homepagina footer form {
-  font-family: var(--basis-lettertype);
-  margin: 2rem 1.2rem 0 1.2rem;
+#overzichtspagina header section p{
+  display: inline-block;
+  font-size: .8rem;
 }
 
-#homepagina footer form p{
-  font-size: .95rem;
-  text-align: center;
-  line-height: 1.7rem;
-  margin-top: 3rem;
-}
-
-#homepagina footer form input{
-  font-family: var(--basis-lettertype);
-  display: block;
-  width: 100%;
-  border: none;
-}
-
-#homepagina footer form input:first-of-type{
-  background-color: var(--grijze-achtergrond);
-  padding: .4rem .6rem .4rem .6rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-#homepagina footer form input:nth-of-type(2){
-  background-color: var(--accent-kleur);
-  font-family: var(--extra-lettertype);
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: .09rem;
-  padding: .9rem .6rem .7rem .6rem;
-  font-size: .75rem;
-}
-
-/*******************/
-/* ZEVENDE SECTION */
-footer{
-  margin-bottom: 3.5rem;
-}
-
-footer section nav{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-}
-
-footer section nav ul{
-  list-style-type: none;
-  padding: 0;
-  margin: 3rem 1.2rem 0 1.2rem;
-}
-
-footer section nav ul li a{
-  text-decoration: none;
-  font-family: var(--basis-lettertype);
-  color: black;
-  font-size: .87rem;
-  margin: 1.2rem 0;
-  display: block;
-}
-
-footer section:nth-of-type(2) h3{
-  font-size: 1.25rem;
-  margin: 2.5rem 1.5rem 0 1.5rem;
-  padding-top: 2rem;
-  letter-spacing: .15rem;
-  border-top: 1px solid #eeeeee;
-}
-
-footer section:nth-of-type(2) div{
+#overzichtspagina header section{
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-top: .6rem;
+  background-color: var(--blauwe-accent-kleur);
+  padding: .9rem;
+  text-align: center;
 }
 
-footer section:nth-of-type(2) img{
-  background-color: var(--accent-kleur);
-  padding: .5rem;
-  margin: .3rem;
+#overzichtspagina main section:first-of-type p{
+  text-align: center;
+  margin: 0 1.2rem;
+  line-height: 1.7rem;
+}
+
+
+
+
+#overzichtspagina main section:nth-of-type(2) ul li img{
+  width: 10rem;
+}
+
+
+#overzichtspagina main section:nth-of-type(4) img{
+  width: 20rem;
 }
