@@ -71,65 +71,6 @@ h4{
 
 
 
-/*****************/
-/* HAMBURGERMENU */
-main section:nth-of-type(7) nav{
-  background-color: var(--roze-accent-kleur);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateY(-100%);
-  transition: .3s linear;
-}
-
-main section:nth-of-type(7) nav img:first-of-type{
-  background-color: var(--witte-basis-kleur);
-  display: flex;
-  justify-content: center;
-}
-
-main section:nth-of-type(7) nav img:first-of-type{
-  padding: 1.5rem 1.7rem;
-}
-
-main section:nth-of-type(7) nav img:nth-of-type(2){
-  display: block;
-  position: absolute;
-  top: 1.5rem;
-  right: 1.9rem;
-  width: 1.1rem;
-}
-
-main section:nth-of-type(7) nav ul{
-  padding: 0;
-  margin: 3rem 0 0 2.9rem;
-}
-
-main section:nth-of-type(7) nav ul li{
-  list-style-type: none;
-  margin: 0 0 1.5rem 0;
-  position: relative;
-}
-
-main section:nth-of-type(7) nav ul li a{
-  color: var(--zwarte-basis-kleur);
-  text-decoration: none;
-  font-family: var(--extra-lettertype);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  letter-spacing: .1rem;
-}
-
-main section:nth-of-type(7) nav.uitgeklaptMenu{
-  transform: translateY(0%);
-}
-
-
-
-
 
 /************************/
 /* HEADER MET NAVIGATIE */
@@ -138,21 +79,152 @@ header{
   position: sticky;
   top: 0;
   box-shadow: 0px 1px 4px rgb(57 63 72 / 30%);
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .3rem 1.2rem;
+}
+
+/* logo */
+header > a:first-of-type{
+  margin-right: auto ;
+}
+
+header > a:first-of-type img{
+  width: 8.125rem;
+}
+
+header > a:nth-of-type(2) img{
+  width: 1.5rem;
+}
+
+/* menu open button */
+header > button{
+  position: relative;
+  width: 2rem;
+  height: 3rem;
+  padding: .75em;
+  border: none;
+  font-family: var(--basis-lettertype);
+  font-size: .6em;
+  /* positioneren van "menu" tekst */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* streepjes van hamburgermenu */
+  background-color: transparent;
+  background-image: linear-gradient(
+    var(--zwarte-basis-kleur) 0px .125rem,
+    transparent .125rem .56rem,
+    var(--zwarte-basis-kleur) .56rem .68rem,
+    transparent .68rem 1.125rem,
+    var(--zwarte-basis-kleur) 1.125rem 1.25rem);
+  background-size: 1.25rem 1.25rem;
+  background-position: center .625rem;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+/****************************/
+/* UITGEKLAPT HAMBURGERMENU */
+header nav{
+  position: fixed;
+  top: 0; 
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  background-color: var(--roze-accent-kleur);
+  transform-origin: center top;
+  transform: scaleY(0);
+  transition: .3s;
 }
 
 header nav ul{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   padding: 0;
+  margin: 3rem 0 0 2.9rem;
 }
 
 header nav ul li{
   list-style-type: none;
+  margin: 0 0 1.5rem 0;
+  position: relative;
 }
 
-header nav ul li:first-of-type{
-  margin: .3rem auto auto 1.2rem;
+header nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-family: var(--extra-lettertype);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: .1rem;
+}
+
+header nav.uitgeklaptMenu{
+  transform: scaleY(1);
+}
+
+
+
+
+
+/***************/
+/* ZOEKEN ICON */
+header nav > a{
+  background-color: var(--witte-basis-kleur);
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.06rem;
+}
+
+header nav > a img{
+  width: 1.3rem;
+}
+
+
+
+
+/***********************/
+/* MENU SLUITEN BUTTON */
+header nav button{
+  position: absolute;
+  top: 1.2rem;
+  right: 1.6rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+/* streepjes voor kruisje menu sluiten */
+header nav button::before,
+header nav button::after{
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 1px;
+  background-color: var(--zwarte-basis-kleur);
+}
+
+/* schuinzetten van de streepjes */
+header nav button::before{
+  transform: rotate(45deg);  
+}
+header nav button::after{
+  transform: rotate(-45deg);  
+}
+
+header nav ul li{
+  list-style-type: none;
 }
 
 header nav ul li:nth-of-type(1) img{
@@ -164,31 +236,9 @@ header nav ul li:nth-of-type(2) img{
   margin: .75rem .625rem;
 }
 
-/* Menu icon met tekst */
-header nav ul li:nth-of-type(3){
-  margin-right: .8rem;
-}
-
-header nav ul li:nth-of-type(3) button{
-  border: none;
-  background-color: transparent;
-}
-
-header nav ul li:nth-of-type(3) button figure img{
-  width: 1.5rem;
-  margin: 0 .625rem;
-}
 
 
-header nav ul li button figure figcaption{
-  font-family: var(--basis-lettertype);
-  font-size: .3rem;
-  letter-spacing: .15rem;
-  font-weight: bold;
-  margin-left: auto;
-  text-transform: uppercase;
-  text-align: center;
-}
+
 
 /**********/
 /* FOOTER */
@@ -243,6 +293,10 @@ footer section:nth-of-type(2) img{
   background-color: var(--blauwe-accent-kleur);
 }
 
+
+
+
+
 /*************************/
 /* AANMELDEN NIEUWSBRIEF */
 footer form {
@@ -287,6 +341,9 @@ footer form input:nth-of-type(2){
 #overzichtspagina footer form input:nth-of-type(2){
   background-color: var(--blauwe-accent-kleur);
 }
+
+
+
 
 
 /***************/
@@ -340,6 +397,7 @@ footer form input:nth-of-type(2){
 #homepagina main section:nth-of-type(1) a:nth-child(3):active{
   border: 1px solid var(--roze-accent-kleur);
 }
+
 
 
 
@@ -467,6 +525,37 @@ color: var(--zwarte-basis-kleur);
   padding: 3.3rem 1.2rem 0 1.2rem;
   display: flex;
   flex-direction: column;
+  width: 100vw;
+}
+
+#homepagina main section:nth-of-type(5) div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  animation-name: slideshow;
+  animation-duration: 15s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+#homepagina main section:nth-of-type(5) div article {
+  min-width: calc(100vw);
+	padding: 1em;
+}
+
+@keyframes slideshow {
+	0% {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(-100%);
+	}
+	66% {
+		transform: translateX(-200%);
+	}
+	100% {
+		transform: translateX(-300%);
+	}
 }
 
 #homepagina main section:nth-of-type(5) p{
@@ -502,6 +591,9 @@ color: var(--zwarte-basis-kleur);
 }
 
 
+
+
+
 /*****************/
 /* WIT BALKJE */
 #homepagina main section:nth-of-type(6){
@@ -534,7 +626,7 @@ color: var(--zwarte-basis-kleur);
 
 /**************************/
 /* BOVENSTE BLAUWE BALKJE */
-#overzichtspagina header section{
+#overzichtspagina header section:first-of-type{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -640,6 +732,9 @@ color: var(--zwarte-basis-kleur);
   color: var(--witte-basis-kleur) !important;
   border-radius: 50%;
 }
+
+
+
 
 
 /**************/
