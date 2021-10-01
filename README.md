@@ -144,28 +144,42 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Hamburgermenu werkt niet helemaal lekker
+Je kan niet met de tab-toets door het menu gaan. Wel kan je het menu openen en sluiten,  
+maar je kan niet de menu items selecteren.  
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Oplossing: geen img gebruiken voor het hamburgermenu, maar dmv linear gradient de drie  
+streepjes met code "tekenen". Ook ga ik ipv werken met transform: translate(100%) werken  
+met transform: scale(0). Ik hoop dat ik op die manier dit kan oplossen.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### "Voer engels in"
+Op mijn tweede pagina (stekjes.html) zegt de screenreader voor vrijwel elk element "voer  
+engels in".  
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Oplossing: "HTML lang=" veranderen van eng naar nl.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Winkelmandje selecteren met tab
+Het is niet mogelijk om met de tab-toets naar het winkelmandjeicoon te navigeren en hem  
+vervolgens te selecteren.  
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Oplossing: De image verpakken in een link (a) element.
+
+
+#### Social media icons selecteren met tab
+Het is niet mogelijk om met de tab-toets naar de socialmediaicons te navigeren en ze  
+vervolgens te selecteren.  
+
+Oplossing: De images verpakken in een link (a) element.
+
+
+#### Borders bij focus niet zichtbaar 
+Ik heb bij de focus state de elementen een zwarte border gegeven, maar ik heb ook zwarte  
+buttons op mijn website staan. Bij deze zwarte buttons is de zwarte lijn dus niet goed  
+zichtbaar.
+
+Oplossing: De zwarte buttons een andere kleur border geven bij de focus state.
 
 </details>
 
@@ -180,16 +194,6 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
 
 
 ### Verslag van meeting
@@ -229,10 +233,11 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
 1. Iconen die gebruikt worden op de site van Plant Rebelz: https://themify.me/themify-icons
 2. Uitleg over rel="noopener": https://www.wplounge.nl/rel-noopener-links-wordpress/
 3. Uitleg over SVG inladen: https://css-tricks.com/using-svg/
+4. Specificity Calculator: https://specificity.keegan.st/
+5. Tips van Sanne hoe ik mijn hamburgermenu beter kan maken: https://codepen.io/shooft/pen/YzQBKwe
+6. Code van Robbert voor een tekstslider: https://codepen.io/robertspier/pen/YzQgGbZ?editors=1100
 
 </details>

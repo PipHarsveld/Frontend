@@ -533,28 +533,34 @@ color: var(--zwarte-basis-kleur);
   flex-direction: row;
   flex-wrap: nowrap;
   animation-name: slideshow;
-  animation-duration: 15s;
-  animation-delay: 5s;
+  animation-duration: 25s;
+
   animation-iteration-count: infinite;
 }
 
 #homepagina main section:nth-of-type(5) div article {
-  min-width: calc(100vw);
-	padding: 1em;
+  min-width: calc(100vw - 2.4rem);
+	padding: 1rem 0 1rem 0;
 }
 
 @keyframes slideshow {
 	0% {
 		transform: translateX(0);
 	}
-	33% {
+  20% {
+    transform: translateX(0);
+  }
+	40% {
 		transform: translateX(-100%);
 	}
-	66% {
+  60% {
+    transform: translateX(-100%);
+  }
+  80% {
 		transform: translateX(-200%);
 	}
 	100% {
-		transform: translateX(-300%);
+		transform: translateX(-200%);
 	}
 }
 
