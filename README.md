@@ -196,22 +196,21 @@ Oplossing: De zwarte buttons een andere kleur border geven bij de focus state.
 Deze week was de eerste keer sinds het programmeren van deze site dat ik op het punt  
 stond om mijn laptop uit het raam te gooien. Ik was een paar dingen aan het schuiven  
 in mijn HTML (containers weggehaald en andere weer toegevoegd), waardoor mijn hamburgermeu
-het ineens niet meer deed. Ik heb een hele dag van alles geprobeerd maar niets leek te  
-werken. Uiteindelijk heb ik het in het FED kanaal gevraagd en toen kwam de conclusie  
+het ineens niet meer deed. Ik heb een hele dag van alles geprobeerd maar niets leek  
+te werken. Uiteindelijk heb ik het in het FED kanaal gevraagd en toen kwam de conclusie  
 dat het te maken had met hoe specifiek de elementen zijn en in welke volgorde ze staan.  
 Ik dacht dat het aan mijn java script lag, maar de fout bleek dus bij mijn css te liggen.  
-Ondanks dat ben ik deze week erg lekker verder gegaan met mijn website. Beide pagina's zijn  
-af en ik heb ook al wat aandacht besteed aan het keuzeonderdeel. 
+Ondanks dat ben ik deze week erg lekker verder gegaan met mijn website. Beide pagina's  
+zijn af en ik heb ook al wat aandacht besteed aan het keuzeonderdeel. 
 
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- De bovenste blauwe balk op stekjespagina fixen met flex-grow: 1 en width: 100%
+- Reviewslider: de padding van de container (div) verwijderen en padding zetten op de reviews (articles) zelf zetten.
+
 
 </details>
 
@@ -225,7 +224,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Meteen na het feedbackgesprek ging ik de puntjes verbeteren en liep ik tegen twee nieuwe  
+problemen aan. Door display flex op de reviews kwamen ze naast elkaar te staan en kon je  
+dus de website uitzoomen. Ik had het proberen op te lossen met overflow: hidden maar het  
+leek niet te werken. Achteraf bleek dat ik de overflow op een verkeerd element had gezet.  
+Het tweede probleem was een stuk ingewikkelder. Als ik mijn hamburgermenu opende, waren  
+de reviews nog zichtbaar, omdat ze er als het ware overheen lagen. Met hulp van Robbert  
+is het uiteindelijk gelukt om het op te lossen. Door de transform werd er een nieuwe stacking 
+context gemaakt, die overschreven kon worden door position: relative op de section zelf 
+ en z-index: -1.
 
 ### Screenshot(s)
 
@@ -250,5 +257,6 @@ hier screenshot(s) van je eindresultaat
 6. Code van Robbert voor een tekstslider: https://codepen.io/robertspier/pen/YzQgGbZ?editors=1100
 7. Uitleg over z-index stacking contexts: https://stackoverflow.com/questions/20851452/z-index-is-canceled-by-setting-transformrotate
 8. Info twee headers: https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice#:~:text=Yes%20you%20can%20use%20multiple,but%20this%20is%20not%20required.
+9. Naslag animaties: https://www.w3schools.com/css/css3_animations.asp
 
 </details>

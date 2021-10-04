@@ -1,8 +1,3 @@
-// // JavaScript Document
-// var menuOpenenIcon = document.querySelector("header nav ul li button");
-// var uitgeklaptMenu = document.querySelector("main section:nth-of-type(7) nav");
-// var menuSluitenIcon = document.querySelector("main section:nth-of-type(7) nav img:nth-of-type(2)");
-
 // JavaScript Document
 var menuOpenenIcon = document.querySelector("header > button");
 var uitgeklaptMenu = document.querySelector("header nav");
@@ -33,7 +28,10 @@ toevoegenAanMandjeButtons[0].addEventListener("click", updateMandje);
 toevoegenAanMandjeButtons[1].addEventListener("click", updateMandje);
 toevoegenAanMandjeButtons[2].addEventListener("click", updateMandje);
 toevoegenAanMandjeButtons[3].addEventListener("click", updateMandje);
-
+toevoegenAanMandjeButtons[4].addEventListener("click", updateMandje);
+toevoegenAanMandjeButtons[5].addEventListener("click", updateMandje);
+toevoegenAanMandjeButtons[6].addEventListener("click", updateMandje);
+toevoegenAanMandjeButtons[7].addEventListener("click", updateMandje);
 
 /* als er op een koopknop is gedrukt - het winkelwagentje updaten */
 function updateMandje() {
@@ -52,3 +50,27 @@ function updateMandje() {
   /* tenslotte het nieuwe aantal schoenen in de HTML zetten */
   mandjeAmount.innerHTML = newAmount;
 }
+
+
+
+
+/******************************/
+/* CODE VOOR SLIDER PRODUCTEN */
+/******************************/
+var buttonProductPagina1 = document.querySelector(".button1");
+var buttonProductPagina2 = document.querySelector(".button2");
+var containerVanProducten = document.querySelector("#overzichtspagina main section:nth-of-type(2) section");
+
+buttonProductPagina1.addEventListener("click", naarVorigePagina);
+buttonProductPagina2.addEventListener("click", naarVolgendePagina);
+
+function naarVorigePagina(){
+  containerVanProducten.classList.add("vorigePagina");
+  containerVanProducten.classList.remove("volgendePagina");
+}
+
+function naarVolgendePagina(){
+  containerVanProducten.classList.add("volgendePagina");
+  containerVanProducten.classList.remove("vorigePagina");
+}
+
