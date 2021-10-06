@@ -18,8 +18,8 @@
   --grijze-border-kleur: rgb(238, 238, 238);
 
   --buttons-kleur: rgb(0, 0, 0);
+  --buttons-hover-kleur: rgb(238, 238, 238);
 }
-
 
 
 
@@ -30,6 +30,7 @@
 p{
   font-family: var(--basis-lettertype);
   font-size: 1rem;
+  line-height: 1.8rem;
 }
 
 a{
@@ -84,13 +85,13 @@ header{
   position: sticky;
   z-index: 2;
   top: 0;
-  box-shadow: 0px 1px 4px rgb(57 63 72 / 30%);
+  box-shadow: 0 .06rem .25rem rgb(57 63 72 / 30%);
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
-  padding: .3rem 1.2rem;
+  padding: .3rem 5%;
 }
 
 /* logo */
@@ -268,22 +269,64 @@ header nav ul li:nth-of-type(2) img{
 /* FOOTER */
 footer{
   margin-bottom: 3.5rem;
+  padding: 0 5%;
 }
 
 footer section:first-of-type{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  margin-top: 2rem;
 }
 
-footer section:first-of-type form{
+/* aanmelden nieuwsbrief */
+footer section form {
+  font-family: var(--basis-lettertype);
   grid-column-start: 1;
   grid-column-end: -1;
 }
 
+footer section form p{
+  font-size: .95rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer section form input{
+  font-family: var(--basis-lettertype);
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+footer section form input:first-of-type{
+  background-color: var(--grijze-achtergrond);
+  padding: .4rem .6rem .4rem .6rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer section form input:nth-of-type(2){
+  font-family: var(--extra-lettertype);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .09rem;
+  padding: .9rem .6rem .7rem .6rem;
+  font-size: .75rem;
+}
+
+#homepagina footer form input:nth-of-type(2){
+  background-color: var(--roze-accent-kleur);
+}
+
+#overzichtspagina footer form input:nth-of-type(2){
+  background-color: var(--blauwe-accent-kleur);
+}
+
+/* navigatie */
 footer section nav ul{
   list-style-type: none;
   padding: 0;
-  margin: 3rem 1.2rem 0 1.2rem;
+  margin-top: 3rem;
 }
 
 footer section nav ul li a{
@@ -326,50 +369,6 @@ footer section:nth-of-type(2) img{
 
 
 
-/*************************/
-/* AANMELDEN NIEUWSBRIEF */
-footer form {
-  font-family: var(--basis-lettertype);
-  margin: 2rem 1.2rem 0 1.2rem;
-}
-
-footer form p{
-  font-size: .95rem;
-  text-align: center;
-  line-height: 1.7rem;
-  margin-top: 3rem;
-}
-
-footer form input{
-  font-family: var(--basis-lettertype);
-  display: block;
-  width: 100%;
-  border: none;
-}
-
-footer form input:first-of-type{
-  background-color: var(--grijze-achtergrond);
-  padding: .4rem .6rem .4rem .6rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-footer form input:nth-of-type(2){
-  font-family: var(--extra-lettertype);
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: .09rem;
-  padding: .9rem .6rem .7rem .6rem;
-  font-size: .75rem;
-}
-
-#homepagina footer form input:nth-of-type(2){
-  background-color: var(--roze-accent-kleur);
-}
-
-#overzichtspagina footer form input:nth-of-type(2){
-  background-color: var(--blauwe-accent-kleur);
-}
 
 
 
@@ -382,52 +381,77 @@ footer form input:nth-of-type(2){
 /*****************************************/
 /* INTRODUCTIE MET ACHTERGRONDAFBEELDING */
 #homepagina main section:first-of-type{
-  height: 21.75rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(https://plantrebelz.nl/wp-content/uploads/2021/02/Header-row-1-1.png);
   background-position: 70% 60%;
-  padding: 1.75rem 0 7rem 0;
+  padding: 1.75rem 5% 7rem 5%;
 }
 
 #homepagina main section:first-of-type p{
   display: block;
-  margin: 0 1.2rem;
   width: 13rem;
-  line-height: 1.7rem;
 }
 
 #homepagina main section:nth-of-type(1) p:nth-of-type(2){
-  margin: .5rem auto .5rem 1.2rem;
+  margin: .5rem auto .5rem 0;
 }
 
 #homepagina main section:nth-of-type(1) p em a{
   color: var(--basis-font-kleur);
 }
 
-#homepagina main section:nth-of-type(1) a:nth-child(3){
+#homepagina main section:nth-of-type(1) nav{
+  display: flex;
+  gap: 1.5rem;
+}
+
+#homepagina main section:nth-of-type(1) nav a:first-of-type{
   background-color: var(--buttons-kleur);
   color: var(--extra-font-kleur);
   font-family: var(--basis-lettertype);
   font-size: .9rem;
+  text-align: center;
   text-decoration: none;
   padding: .8rem 3.125rem .8rem 3.125rem;
-  margin: 2rem 1.2rem 0 1.2rem;
+  margin-top: 2rem;
   display: block;
   width: 12.5rem;
   transition: .5s;
 }
 
-#homepagina main section:nth-of-type(1) a:nth-child(3):hover{
+#homepagina main section:nth-of-type(1) nav a:first-of-type:hover{
   background-color: var(--roze-accent-kleur);
   color: var(--basis-font-kleur);
 }
 
-#homepagina main section:nth-of-type(1) a:nth-child(3):active{
+#homepagina main section:nth-of-type(1) nav a:first-of-type:active{
   border: 1px solid var(--roze-accent-kleur);
 }
 
+#homepagina main section:nth-of-type(1) nav a:nth-of-type(2){
+  background-color: white;
+  color: var(--basis-font-kleur);
+  font-family: var(--basis-lettertype);
+  font-size: .9rem;
+  text-decoration: none;
+  padding: .8rem 3.125rem .8rem 3.125rem;
+  margin-top: 2rem;
+  display: block;
+  width: 12.5rem;
+  transition: .5s;
+  text-align: center;
+  display: none;
+}
 
+#homepagina main section:nth-of-type(1) nav a:nth-of-type(2):hover{
+  background-color: var(--roze-accent-kleur);
+  color: var(--basis-font-kleur);
+}
+
+#homepagina main section:nth-of-type(1) nav a:nth-of-type(2):active{
+  border: 1px solid var(--roze-accent-kleur);
+}
 
 
 
@@ -438,7 +462,7 @@ footer form input:nth-of-type(2){
   align-items: center;
   justify-content: center;
   background-color: var(--roze-accent-kleur);
-  padding: .44rem;
+  padding: 0.44rem 5% 0.44rem 5%;
   text-align: center;
 }
 
@@ -460,8 +484,7 @@ footer form input:nth-of-type(2){
 /************************/
 /* NAV MET AFBEELDINGEN */
 #homepagina main section:nth-of-type(3){
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding: 15% 5% 15% 5%;
 }
 
 #homepagina main section:nth-of-type(3) ul{
@@ -495,7 +518,7 @@ footer form input:nth-of-type(2){
 /* VERZORGINGSVRAAG */
 #homepagina main section:nth-of-type(4){
   background-color: var(--grijze-achtergrond);
-  padding: 3.3rem 1.2rem 0 1.2rem;
+  padding: 3.3rem 5% 0 5%;
   display: flex;
   flex-direction: column;
 }
@@ -509,13 +532,17 @@ footer form input:nth-of-type(2){
   padding: 0 0 1rem 0;
 }
 
+#homepagina main section:nth-of-type(4) p:first-of-type{
+  max-width: 33rem;
+}
+
 #homepagina main section:nth-of-type(4) p:nth-of-type(2){
   font-weight: bold;
 }
 
-
 #homepagina main section:nth-of-type(4) img{
   width: 100%;
+  max-width: 30rem;
   margin: 1.5rem 0 0 0;
   line-height: 0;
   align-self: center;
@@ -526,10 +553,11 @@ footer form input:nth-of-type(2){
   color: var(--extra-font-kleur);
   font-size: .9rem;
   text-decoration: none;
-  padding: .4rem 3.125rem .4rem 3.125rem;
-  margin: 2.5rem 1.2rem 2rem 0;
+  padding: .4rem 0 .4rem 0;
+  margin: 2.5rem 0 2rem 0;
   display: block;
-  width: 19rem;
+  width: 85%;
+  max-width: 20rem;
   text-align: center;
   transition: .5s;
 }
@@ -544,12 +572,62 @@ color: var(--basis-font-kleur);
 }
 
 
+/*****************/
+/* STEKKIE BOXEN */
+#homepagina main section:nth-of-type(5){
+  display: none;
+  background-color: var(--grijze-achtergrond);
+  padding: 10% 5%;
+}
+
+#homepagina main section:nth-of-type(5) article h2{
+  text-align: left;
+}
+
+#homepagina main section:nth-of-type(5) article:first-of-type{
+  padding-right: 2rem;
+}
+
+#homepagina main section:nth-of-type(5) article:nth-of-type(2){
+  padding-left: 2rem;
+}
+
+#homepagina main section:nth-of-type(5) article:nth-of-type(2) h2{
+  margin-top: 1.56rem;
+}
+
+#homepagina main section:nth-of-type(5) article a{
+  background-color: var(--buttons-kleur);
+  color: var(--extra-font-kleur);
+  font-family: var(--basis-lettertype);
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: .7rem 1.8rem .7rem 1.8rem;
+  margin: 2.2rem 0;
+  display: inline-block;
+  transition: .5s;
+}
+
+#homepagina main section:nth-of-type(5) article a:first-of-type:hover{
+  background-color: var(--roze-accent-kleur);
+  color: var(--basis-font-kleur);
+}
+
+#homepagina main section:nth-of-type(5) article a:first-of-type:active{
+  border: 1px solid var(--roze-accent-kleur);
+}
+
+#homepagina main section:nth-of-type(5) article img{
+  width: 100%;
+  box-shadow: 0 .06rem .5rem .125rem rgb(0 0 0 / 15%);
+}
 
 
 
 /***********/
 /* REVIEWS */
-#homepagina main section:nth-of-type(5){
+#homepagina main section:nth-of-type(6){
   background-color: var(--roze-accent-kleur);
   padding: 3.3rem 0 0 0;
   display: flex;
@@ -557,10 +635,9 @@ color: var(--basis-font-kleur);
   width: 100vw;
   overflow: hidden;
   position: relative;
-  z-index: -1;
 }
 
-#homepagina main section:nth-of-type(5) div{
+#homepagina main section:nth-of-type(6) div{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -569,9 +646,9 @@ color: var(--basis-font-kleur);
   animation-iteration-count: infinite;
 }
 
-#homepagina main section:nth-of-type(5) div article {
+#homepagina main section:nth-of-type(6) div article {
   min-width: 100vw;
-	padding: 1rem 1.2rem 1rem 1.2rem;
+	padding: 1rem 5% 1rem 5%;
 }
 
 @keyframes slideshow {
@@ -595,35 +672,36 @@ color: var(--basis-font-kleur);
 	}
 }
 
-#homepagina main section:nth-of-type(5) p{
+#homepagina main section:nth-of-type(6) p{
   text-align: center;
-  line-height: 1.8rem;
 }
 
-#homepagina main section:nth-of-type(5) p:nth-of-type(2){
-  padding: 1.2rem 0 0 0;
+#homepagina main section:nth-of-type(6) p:nth-of-type(2){
+  padding-top: 1.2rem;
 }
 
-#homepagina main section:nth-of-type(5) p:nth-of-type(3){
-  padding: 1.2rem 0 0 0;
+#homepagina main section:nth-of-type(6) p:nth-of-type(3){
+  padding-top: 1.2rem;
 }
 
-#homepagina main section:nth-of-type(5) a{
+#homepagina main section:nth-of-type(6) a{
   background-image: url("https://plantrebelz.nl/wp-content/uploads/2021/01/2390.04.20-PRZ-Streep5-WEB-Roze-Donker-e1611784349429.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  align-self: center;
+  width: 13rem;
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
   font-family: var(--extra-lettertype);
   text-transform: uppercase;
   font-size: .8rem;
   letter-spacing: .07rem;
-  padding: 2rem;
   text-align: center;
   color: var(--buttons-kleur);
-  margin: 1rem 0 2rem 0;
   transition: .5s;
 }
 
-#homepagina main section:nth-of-type(5) a:hover{
+#homepagina main section:nth-of-type(6) a:hover{
   color: var(--extra-font-kleur);
 }
 
@@ -633,21 +711,21 @@ color: var(--basis-font-kleur);
 
 /*****************/
 /* WIT BALKJE */
-#homepagina main section:nth-of-type(6){
+#homepagina main section:nth-of-type(7){
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .2rem;
+  padding: .2rem 5%;
   text-align: center;
   border-bottom: 1px solid var(--grijze-border-kleur);
 }
 
-#homepagina main section:nth-of-type(6) p{
+#homepagina main section:nth-of-type(7) p{
   display: inline-block;
   font-size: .81rem;
 }
 
-#homepagina main section:nth-of-type(6) img{
+#homepagina main section:nth-of-type(7) img{
   width: .875rem;
   height: .875rem;
   margin: .44rem;
@@ -685,10 +763,13 @@ color: var(--basis-font-kleur);
 
 /*************************/
 /* INTRODUCTIE PARAGRAAF */
+#overzichtspagina main > section:first-of-type{
+  padding: 0 5%;
+}
+
 #overzichtspagina main section:first-of-type p{
   text-align: center;
   margin: 0 1rem;
-  line-height: 1.7rem;
 }
 
 
@@ -704,7 +785,6 @@ color: var(--basis-font-kleur);
 }
 
 #overzichtspagina main section:nth-of-type(2) section{
-  margin: 0 1rem;
   display: flex;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -746,6 +826,7 @@ color: var(--basis-font-kleur);
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   min-width: 100%;
+  padding: 0 5%;
 }
 
 #overzichtspagina main section:nth-of-type(2) ul li{
@@ -768,6 +849,7 @@ color: var(--basis-font-kleur);
   letter-spacing: .1rem;
   color: var(--basis-font-kleur);
   font-weight: bold ;
+  text-align: center;
 }
 
 /* ondertitel en prijs */
@@ -791,6 +873,19 @@ color: var(--basis-font-kleur);
   text-align: center;
   border: none;
   font-family: var(--basis-lettertype);
+}
+
+#overzichtspagina main section:nth-of-type(2) ul li button:hover{
+  background-color: var(--buttons-hover-kleur);
+  color: var(--basis-font-kleur);
+  box-shadow: 0 .31rem .75rem .18rem rgb(0 0 0 / 12%);
+  cursor: pointer;
+}
+
+#overzichtspagina main section:nth-of-type(2) ul li button:focus{
+  background-color: var(--buttons-hover-kleur);
+  color: var(--basis-font-kleur);
+  box-shadow: 0 .31rem .75rem .18rem rgb(0 0 0 / 12%);
 }
 
 /* buttons voor meer producten */
@@ -825,7 +920,7 @@ color: var(--basis-font-kleur);
 /* INFORMATIE */
 #overzichtspagina main section:nth-of-type(3){
   background-color: var(--grijze-achtergrond);
-  padding: 3.3rem 1.2rem 3.3rem 1.2rem;
+  padding: 3.3rem 5% 3.3rem 5%;
   display: flex;
   flex-direction: column;
 }
@@ -847,7 +942,7 @@ color: var(--basis-font-kleur);
 /* TIPS */
 #overzichtspagina main section:nth-of-type(4){
   background-color: var(--blauwe-accent-kleur);
-  padding: 2rem 1.2rem 0 1.2rem;
+  padding: 2rem 5% 0 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -888,13 +983,13 @@ color: var(--basis-font-kleur);
 
 
 
-/*****************/
+/**************/
 /* WIT BALKJE */
 #overzichtspagina main section:nth-of-type(5){
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: .2rem;
+  padding: .2rem 5%;
   text-align: center;
   border-bottom: 1px solid var(--grijze-border-kleur);
 }
@@ -909,3 +1004,84 @@ color: var(--basis-font-kleur);
   height: .875rem;
   margin: .44rem;
 }
+
+
+
+
+/**************/
+/* RESPONSIVE */
+/**************/
+
+@media(max-width: 300px){
+  /* bij kleine pagina, font kleiner */
+  #homepagina main section:nth-of-type(4) h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media(min-width: 500px){
+  /* content verzorgingsvraag centered */
+  #homepagina main section:nth-of-type(4){
+    align-items: center;
+  }
+}
+
+
+@media(min-width: 680px){
+  /* eerste paragraaf homepagina font groter */
+  #homepagina main section:first-of-type p{
+    font-size: 1.25rem;
+    width: 29rem;
+    margin-bottom: 1.875rem;
+  }
+
+  #homepagina main section:first-of-type{
+    background-position: 32.67% 38.75%;
+    padding-bottom: 12%;
+    padding-top: 12%;
+  }
+
+  /* tweede button wordt zichtbaar */
+  #homepagina main section:nth-of-type(1) nav a:nth-of-type(2){
+    display: block;
+  }
+
+  
+  #homepagina main section:nth-of-type(4) a:first-of-type{
+    background-color: var(--buttons-kleur);
+    color: var(--extra-font-kleur);
+    font-size: .9rem;
+    text-decoration: none;
+    padding: .4rem 0 .4rem 0;
+    margin: 2.5rem 0 2rem 0;
+    display: block;
+    width: 85%;
+    text-align: center;
+    transition: .5s;
+  }
+
+  #homepagina main section:nth-of-type(4){
+    display: none;
+  }
+
+  #homepagina main section:nth-of-type(5){
+    display: flex;
+  }
+}
+
+
+@media (min-width:782px){
+  /* nieuwsbrief naast nav */
+  footer section form {
+    order: 4;
+    grid-column-start: 4;
+    grid-column-end: -1;
+  }
+}
+
+/* @media (min-width:1200){
+  /* content kan niet breder worden
+  main{
+    padding: 0 40rem;
+  }
+} */
