@@ -258,6 +258,6 @@ hier screenshot(s) van je eindresultaat
 7. Uitleg over z-index stacking contexts: https://stackoverflow.com/questions/20851452/z-index-is-canceled-by-setting-transformrotate
 8. Info twee headers: https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice#:~:text=Yes%20you%20can%20use%20multiple,but%20this%20is%20not%20required.
 9. Naslag animaties: https://www.w3schools.com/css/css3_animations.asp
-10. Uitleg darkmode: https://stuffandnonsense.co.uk/blog/redesigning-your-product-and-website-for-dark-mode
+10. Laatste flex-item rechts uitlijnen: https://medium.com/@iamryanyu/how-to-align-last-flex-item-to-right-73512e4e5912
 
 </details>
