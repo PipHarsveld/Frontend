@@ -1,4 +1,6 @@
-// JavaScript Document
+/***************************/
+/* CODE VOOR HAMBURGERMENU */
+/***************************/
 var menuOpenenIcon = document.querySelector("header > button");
 var uitgeklaptMenu = document.querySelector("header nav");
 var menuSluitenIcon = document.querySelector("header nav button");
@@ -17,13 +19,10 @@ function toggleMenu(){
 /* CODE VOOR DE KOOPKNOPPEN */
 /****************************/
 
-/* alle koopknoppen opzoeken in de HTML */
-/* omdat er meer buttons geselecteerd moeten worden, wordt querySelectorAll gebruikt (en niet querySelector) */
-/* het gevonden lijstje met koopknoppen (een array) in de variabele 'addToCartButtons' opslaan */
+/* alle koopknoppen opzoeken in de HTML en de array opslaan in de variabele */
 var toevoegenAanMandjeButtons = document.querySelectorAll("button.shop");
 
-/* elke koopknop laten luisteren naar een klik */
-/* na een klik de functie 'updateShoppingCart' uitvoeren */
+/* na een klik op één van de buttons uit de array, de functie uitvoeren */
 toevoegenAanMandjeButtons[0].addEventListener("click", updateMandje);
 toevoegenAanMandjeButtons[1].addEventListener("click", updateMandje);
 toevoegenAanMandjeButtons[2].addEventListener("click", updateMandje);
@@ -35,20 +34,19 @@ toevoegenAanMandjeButtons[7].addEventListener("click", updateMandje);
 
 /* als er op een koopknop is gedrukt - het winkelwagentje updaten */
 function updateMandje() {
-  /* het getal (de span) in de winkelwagen-link in de nav opzoeken */
-  /* die span in de variabele 'shoppingCartAmount' opslaan */
-  let mandjeAmount = document.querySelector(".winkelmandje span");
+  /* het getal (de span) in de winkelwagen-link in de nav opzoeken en die opslaan in de variabele*/
+  let hoeveelheidInMandje = document.querySelector(".winkelmandje span");
+
+  /* het huidige aantal planten in het mandje bepalen */
+  let huidigeHoeveelheid = hoeveelheidInMandje.innerHTML;
+  /* dat is een string - omzetten naar een getal */
+  huidigeHoeveelheid = parseInt(huidigeHoeveelheid);
   
-  /* het huidige aantal schoenen in  de shopping cart bepalen */
-  let currentAmount = mandjeAmount.innerHTML;
-  /* dat is een string - dus even omzetten naar een getal */
-  currentAmount = parseInt(currentAmount);
+  /* het nieuwe aantal planten berekenen */
+  let nieuweHoeveelheid = huidigeHoeveelheid + 1;
   
-  /* het nieuwe aantal schoenen berekenen */
-  let newAmount = currentAmount + 1;
-  
-  /* tenslotte het nieuwe aantal schoenen in de HTML zetten */
-  mandjeAmount.innerHTML = newAmount;
+  /* het nieuwe aantal planten in de HTML zetten */
+  hoeveelheidInMandje.innerHTML = nieuweHoeveelheid;
 }
 
 

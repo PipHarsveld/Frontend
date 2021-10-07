@@ -22,7 +22,7 @@ Pip Harsveld
 Rood
 
 #### Je focus:
-Surface Plane
+Responsive
 
 </details>
 

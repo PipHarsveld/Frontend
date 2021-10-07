@@ -386,7 +386,7 @@ footer section:nth-of-type(2) img{
   background-size: cover;
   background-image: url(https://plantrebelz.nl/wp-content/uploads/2021/02/Header-row-1-1.png);
   background-position: 70% 60%;
-  padding: 1.75rem 5% 7rem 5%;
+  padding: 9% 5% 35% 5%;
 }
 
 #homepagina main > section:first-of-type p{
@@ -599,14 +599,15 @@ color: var(--basis-font-kleur);
 
 #homepagina main section:nth-of-type(5) article h2{
   text-align: left;
+  font-size: 2.2rem;
 }
 
 #homepagina main section:nth-of-type(5) article:first-of-type{
-  padding-right: 2rem;
+  padding-right: 2.875rem;
 }
 
 #homepagina main section:nth-of-type(5) article:nth-of-type(2){
-  padding-left: 2rem;
+  padding-left: 2.875rem;
 }
 
 #homepagina main section:nth-of-type(5) article:nth-of-type(2) h2{
@@ -649,7 +650,7 @@ color: var(--basis-font-kleur);
   padding: 3.3rem 0 0 0;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -1036,12 +1037,22 @@ color: var(--basis-font-kleur);
   }
 }
 
+
+
 @media(min-width: 31.25rem){ /* 500px*/
   /* content verzorgingsvraag centered */
   #homepagina main section:nth-of-type(4){
     align-items: center;
   }
+  
+  /* formaat en positie achtergrondafbeelding anders */
+  #homepagina main > section:first-of-type{
+    background-position: 32.67% 38.75%;
+    padding-bottom: 12%;
+    padding-top: 12%;
+  }
 }
+
 
 
 @media(min-width: 42.5rem){ /* 680px*/
@@ -1052,31 +1063,17 @@ color: var(--basis-font-kleur);
     margin-bottom: 1.875rem;
   }
 
-  #homepagina main > section:first-of-type{
-    background-position: 32.67% 38.75%;
-    padding-bottom: 12%;
-    padding-top: 12%;
-  }
-
   /* tweede button wordt zichtbaar */
-  #homepagina main > section:nth-of-type(1) nav a:nth-of-type(2){
+  #homepagina main > section:first-of-type nav a:nth-of-type(2){
     display: block;
   }
 
-  
-  #homepagina main > section:nth-of-type(4) a:first-of-type{
-    background-color: var(--buttons-kleur);
-    color: var(--extra-font-kleur);
-    font-size: .9rem;
-    text-decoration: none;
-    padding: .4rem 0 .4rem 0;
-    margin: 2.5rem 0 2rem 0;
-    display: block;
-    width: 85%;
-    text-align: center;
-    transition: .5s;
+  /* padding rondom "vind jouw rebel" wordt kleiner */
+  #homepagina main > section:nth-of-type(3){
+    padding: 10% 5%;
   }
 
+  /* verzorgingstips verdwijnt, stekkiebox wordt zichtbaar */
   #homepagina main > section:nth-of-type(4){
     display: none;
   }
@@ -1085,6 +1082,28 @@ color: var(--basis-font-kleur);
     display: flex;
   }
 }
+
+
+
+@media (min-width: 48rem){ /* 768px*/
+  /* formaat en positie achtergrondafbeelding anders */
+  #homepagina main > section:first-of-type{
+    background-position: 0% 55%;
+    padding-bottom: 8%;
+    padding-top: 8%;
+  }
+
+  /* padding rondom "vind jouw rebel" wordt kleiner */
+  #homepagina main > section:nth-of-type(3){
+    padding: 8% 5%;
+  }
+
+  /* padding rondom "stekkiesbox" wordt kleiner */
+  #homepagina main > section:nth-of-type(5){
+    padding: 5% 5%;
+  }
+}
+
 
 
 @media (min-width: 48.75rem){ /* 780px*/
@@ -1096,12 +1115,6 @@ color: var(--basis-font-kleur);
   }
 }
 
-/* @media (min-width:1200){
-  /* content kan niet breder worden
-  main{
-    padding: 0 40rem;
-  }
-} */
 
 
 @media (min-width: 54.7rem){ /* 875.2px*/
@@ -1109,7 +1122,7 @@ color: var(--basis-font-kleur);
   #homepagina main > section:nth-of-type(2){
     text-align: left;
     padding: .44rem 0;
-    justify-content: space-around;
+    justify-content: space-around ;
   }
 
   #homepagina main section:nth-of-type(2) section:nth-of-type(2){
@@ -1129,6 +1142,8 @@ color: var(--basis-font-kleur);
   }
 
 }
+
+
 
 @media (min-width: 64rem){ /* 1024px*/
   /* hamburgermenu naar "normaal" menu */
@@ -1189,5 +1204,30 @@ color: var(--basis-font-kleur);
   #homepagina main > section:nth-of-type(1) nav a:nth-of-type(2){
     background-color: transparent;
     border: 0.05rem solid var(--buttons-kleur);
+  }
+}
+
+
+@media (min-width: 80rem){ /* 1280px*/
+  /* content kan niet breder worden */
+  /* main{
+    padding: 0 10rem;
+  } */
+  
+  /* formaat en positie achtergrondafbeelding anders */
+  #homepagina main > section:first-of-type{
+    background-position: 0% 55%;
+    padding-bottom: 4%;
+    padding-top: 4%;
+  }
+
+  /* padding rondom "vind jouw rebel" wordt kleiner */
+  #homepagina main > section:nth-of-type(3){
+    padding: 4% 5%;
+  }
+
+  /* padding rondom "stekkie surprise" wordt kleiner */
+  #homepagina main > section:nth-of-type(3){
+    padding: 5% 5%;
   }
 }
