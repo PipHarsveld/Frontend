@@ -167,13 +167,6 @@ vervolgens te selecteren.
 Oplossing: De image verpakken in een link (a) element.
 
 
-#### Social media icons selecteren met tab
-Het is niet mogelijk om met de tab-toets naar de socialmediaicons te navigeren en ze  
-vervolgens te selecteren.  
-
-Oplossing: De images verpakken in een link (a) element.
-
-
 #### Borders bij focus niet zichtbaar 
 Ik heb bij de focus state de elementen een zwarte border gegeven, maar ik heb ook zwarte  
 buttons op mijn website staan. Bij deze zwarte buttons is de zwarte lijn dus niet goed  
@@ -189,7 +182,7 @@ Oplossing: De zwarte buttons een andere kleur border geven bij de focus state.
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details>
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
@@ -230,13 +223,31 @@ dus de website uitzoomen. Ik had het proberen op te lossen met overflow: hidden 
 leek niet te werken. Achteraf bleek dat ik de overflow op een verkeerd element had gezet.  
 Het tweede probleem was een stuk ingewikkelder. Als ik mijn hamburgermenu opende, waren  
 de reviews nog zichtbaar, omdat ze er als het ware overheen lagen. Met hulp van Robbert  
-is het uiteindelijk gelukt om het op te lossen. Door de transform werd er een nieuwe stacking 
-context gemaakt, die overschreven kon worden door position: relative op de section zelf 
- en z-index: -1.
+is het uiteindelijk gelukt om het op te lossen. Door de transform werd er een nieuwe stacking  
+context gemaakt, die overschreven kon worden door position: relative op de section zelf  
+en z-index: -1.  
+Later in de week kwam ik erachter dat ik door de negatieve z-index niet meer op de button  
+kon klikken, toen ik me ineens bedacht dat het veel handiger en logischer is om de header  
+een hogere positie te geven, dus heb ik de header een z-index van 2 gegeven waarmee alle  
+problemen waren opgelost.
 
-### Screenshot(s)
+### Screenshots homepagina
+Home | Plant Rebelz  
+Mobiel:  
+<img src="images/homepagina_mobiel.png" width="375px" alt="homepagina Plant Rebelz op mobiel">  
+Tablet:  
+<img src="images/homepagina_tablet.png" width="375px" alt="homepagina Plant Rebelz op tablet">  
+Laptop:  
+<img src="images/homepagina_laptop.png" width="375px" alt="homepagina Plant Rebelz op laptop">  
 
-hier screenshot(s) van je eindresultaat
+### Screenshots detailpagina
+Stekjes | Plant Rebelz  
+Mobiel:  
+<img src="images/detailpagina_mobiel.png" width="375px" alt="homepagina Plant Rebelz op mobiel">  
+Tablet:  
+<img src="images/detailpagina_tablet.png" width="375px" alt="homepagina Plant Rebelz op tablet">  
+Laptop:  
+<img src="images/detailpagina_laptop.png" width="375px" alt="homepagina Plant Rebelz op laptop">  
 
 </details>
 
@@ -261,5 +272,8 @@ hier screenshot(s) van je eindresultaat
 10. Laatste flex-item rechts uitlijnen: https://medium.com/@iamryanyu/how-to-align-last-flex-item-to-right-73512e4e5912
 11. Tabindex: https://webaim.org/techniques/keyboard/tabindex
 12. Volgorde veranderen voor screenreaders: https://stackoverflow.com/questions/52933690/responsive-ui-modify-reading-order-in-screen-readers
+13. Info over timer in JS: https://www.w3schools.com/jsref/met_win_settimeout.asp
+14. HTML validator: https://validator.w3.org/
+15. CSS validator: https://jigsaw.w3.org/css-validator/validator
 
 </details>

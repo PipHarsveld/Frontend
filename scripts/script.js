@@ -15,6 +15,9 @@ function toggleMenu(){
 }
 
 
+
+
+
 /****************************/
 /* CODE VOOR DE KOOPKNOPPEN */
 /****************************/
@@ -47,7 +50,18 @@ function updateMandje() {
   
   /* het nieuwe aantal planten in de HTML zetten */
   hoeveelheidInMandje.innerHTML = nieuweHoeveelheid;
+
+  // voeg in css class van de animatie toe
+  hoeveelheidInMandje.classList.add("winkelmandAnimatie");
+
+  // verwijder de class van animatie in css
+  setTimeout(verwijderAnimatieClass, 500);
+  
+  function verwijderAnimatieClass(){
+    hoeveelheidInMandje.classList.remove("winkelmandAnimatie");
+  }
 }
+
 
 
 
@@ -77,5 +91,3 @@ function naarVolgendePagina(){
   buttonProductPagina2.classList.add("active");
   buttonProductPagina1.classList.remove("active");
 }
-
-

@@ -18,9 +18,11 @@
   --grijze-achtergrond: rgb(245, 245, 245);
   --grijze-border-kleur: rgb(238, 238, 238);
 
-  --buttons-kleur: rgb(0, 0, 0);
+  --basis-kleur: rgb(0, 0, 0);
+  --extra-kleur: rgb(255, 255, 255);
   --buttons-hover-kleur: rgb(238, 238, 238);
 }
+
 
 
 
@@ -114,15 +116,31 @@ header:nth-of-type(2) a span{
   position: relative;
   right: .7rem;
   top: -.6em;
-  
   min-width: 1.25rem; 
   padding: .16rem .38rem;
-  background-color: var(--buttons-kleur);
+  background-color: var(--basis-kleur);
   border-radius: 50%;
   font-size: .7rem;
   text-align: center;
   line-height: 1.25rem;
   color:var(--extra-font-kleur);
+
+}
+
+/* item teller vergroot bij click op button */
+.winkelmandAnimatie{
+  animation-name: winkelmandTellerVergroten;
+  animation-duration: .5s;
+}
+
+@keyframes winkelmandTellerVergroten{
+  0%{
+    font-size: .7rem;
+  }
+
+  100%{
+    font-size: 1rem;
+  }
 }
 
 /* menu open button */
@@ -141,11 +159,11 @@ header > button{
   /* streepjes van hamburgermenu */
   background-color: transparent;
   background-image: linear-gradient(
-    var(--buttons-kleur) 0px .125rem,
+    var(--basis-kleur) 0px .125rem,
     transparent .125rem .56rem,
-    var(--buttons-kleur) .56rem .68rem,
+    var(--basis-kleur) .56rem .68rem,
     transparent .68rem 1.125rem,
-    var(--buttons-kleur) 1.125rem 1.25rem);
+    var(--basis-kleur) 1.125rem 1.25rem);
   background-size: 1.25rem 1.25rem;
   background-position: center .625rem;
   background-repeat: no-repeat;
@@ -216,6 +234,7 @@ header nav > a img{
 
 
 
+
 /***********************/
 /* MENU SLUITEN BUTTON */
 header nav button{
@@ -238,7 +257,7 @@ header nav button::after{
   position: absolute;
   width: 75%;
   height: 1px;
-  background-color: var(--buttons-kleur);
+  background-color: var(--basis-kleur);
 }
 
 /* schuinzetten van de streepjes */
@@ -313,6 +332,7 @@ footer section form input:nth-of-type(2){
   letter-spacing: .09rem;
   padding: .9rem .6rem .7rem .6rem;
   font-size: .75rem;
+  cursor: pointer;
 }
 
 #homepagina footer form input:nth-of-type(2){
@@ -412,13 +432,13 @@ footer section:nth-of-type(2) img{
 }
 
 #homepagina main > section:nth-of-type(1) nav a:first-of-type{
-  background-color: var(--buttons-kleur);
+  background-color: var(--basis-kleur);
   color: var(--extra-font-kleur);
   font-family: var(--basis-lettertype);
   font-size: .9rem;
   text-align: center;
   text-decoration: none;
-  padding: .8rem 3.125rem .8rem 3.125rem;
+  padding: .8rem 0 .8rem 0;
   margin-top: 2rem;
   display: block;
   width: 12.5rem;
@@ -430,8 +450,12 @@ footer section:nth-of-type(2) img{
   color: var(--basis-font-kleur);
 }
 
+#homepagina main > section:nth-of-type(1) nav a:first-of-type:focus{
+  border: 3px solid var(--roze-accent-kleur);
+}
+
 #homepagina main > section:nth-of-type(1) nav a:first-of-type:active{
-  border: 1px solid var(--roze-accent-kleur);
+  border: 1px solid var(--basis-kleur);
 }
 
 #homepagina main > section:nth-of-type(1) nav a:nth-of-type(2){
@@ -450,13 +474,19 @@ footer section:nth-of-type(2) img{
 }
 
 #homepagina main > section:nth-of-type(1) nav a:nth-of-type(2):hover{
-  background-color: var(--roze-accent-kleur);
-  color: var(--basis-font-kleur);
+  background-color: var(--basis-kleur);
+  color: var(--extra-font-kleur);
+}
+
+#homepagina main > section:nth-of-type(1) nav a:nth-of-type(2):focus{
+  border: 2px solid var(--basis-kleur);
 }
 
 #homepagina main > section:nth-of-type(1) nav a:nth-of-type(2):active{
-  border: 1px solid var(--roze-accent-kleur);
+  border: 2px solid var(--roze-accent-kleur);
 }
+
+
 
 
 
@@ -520,6 +550,12 @@ footer section:nth-of-type(2) img{
 #homepagina main section:nth-of-type(3) ul li a{
   display: flex;
   justify-content: center;
+  transition: .5s;
+}
+
+#homepagina main section:nth-of-type(3) ul li a:hover{
+  transform: translateY(-1rem);
+  opacity: .7;
 }
 
 #homepagina main section:nth-of-type(3) ul li a img{
@@ -567,7 +603,7 @@ footer section:nth-of-type(2) img{
 }
 
 #homepagina main section:nth-of-type(4) a:first-of-type{
-  background-color: var(--buttons-kleur);
+  background-color: var(--basis-kleur);
   color: var(--extra-font-kleur);
   font-size: .9rem;
   text-decoration: none;
@@ -588,6 +624,9 @@ color: var(--basis-font-kleur);
 #homepagina main section:nth-of-type(4) a:nth-of-type(2){
   color: var(--basis-font-kleur);
 }
+
+
+
 
 
 /*****************/
@@ -616,7 +655,7 @@ color: var(--basis-font-kleur);
 }
 
 #homepagina main section:nth-of-type(5) article a{
-  background-color: var(--buttons-kleur);
+  background-color: var(--basis-kleur);
   color: var(--extra-font-kleur);
   font-family: var(--basis-lettertype);
   font-size: 1rem;
@@ -633,14 +672,20 @@ color: var(--basis-font-kleur);
   color: var(--basis-font-kleur);
 }
 
+#homepagina main section:nth-of-type(5) article a:first-of-type:focus{
+  border: 3px solid var(--roze-accent-kleur);
+}
+
 #homepagina main section:nth-of-type(5) article a:first-of-type:active{
-  border: 1px solid var(--roze-accent-kleur);
+  border: 1px solid var(--basis-kleur);
 }
 
 #homepagina main section:nth-of-type(5) article img{
   width: 100%;
   box-shadow: 0 .06rem .5rem .125rem rgb(0 0 0 / 15%);
 }
+
+
 
 
 
@@ -724,7 +769,7 @@ color: var(--basis-font-kleur);
   font-size: .8rem;
   letter-spacing: .07rem;
   text-align: center;
-  color: var(--buttons-kleur);
+  color: var(--basis-kleur);
   transition: .5s;
 }
 
@@ -762,6 +807,11 @@ color: var(--basis-font-kleur);
 
 
 
+
+
+
+
+
 /******************/
 /* STEKJES PAGINA */
 /******************/
@@ -773,7 +823,7 @@ color: var(--basis-font-kleur);
   align-items: center;
   justify-content: center;
   background-color: var(--blauwe-accent-kleur);
-  padding: .9rem;
+  padding: .3rem 0;
   text-align: center;
   flex-grow: 1;
   width: 100%;
@@ -792,6 +842,7 @@ color: var(--basis-font-kleur);
 /* INTRODUCTIE PARAGRAAF */
 #overzichtspagina main > section:first-of-type{
   padding: 0 5%;
+  margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -800,7 +851,7 @@ color: var(--basis-font-kleur);
 #overzichtspagina main > section:first-of-type p{
   text-align: center;
   margin: 0 1rem;
-  width: 45rem;
+  max-width: 45rem;
 }
 
 
@@ -871,6 +922,20 @@ color: var(--basis-font-kleur);
   width: 100%;
 }
 
+/* tweede afbeelding onzichtbaar */
+#overzichtspagina main section:nth-of-type(2) ul li img:nth-of-type(2){
+  display: none;
+}
+
+/* eerste afbeelding wisselt met tweede afbeelding bij hoveren */
+#overzichtspagina main section:nth-of-type(2) ul li:hover img:nth-of-type(2){
+  display: block;
+}
+
+#overzichtspagina main section:nth-of-type(2) ul li:hover img:first-of-type{
+  display: none;
+}
+
 /* naam van product */
 #overzichtspagina main section:nth-of-type(2) ul li a{
   text-decoration: none;
@@ -893,7 +958,7 @@ color: var(--basis-font-kleur);
 
 /* in plantenmand button */
 #overzichtspagina main section:nth-of-type(2) ul li button{
-  background-color: var(--buttons-kleur);
+  background-color: var(--basis-kleur);
   color: var(--extra-font-kleur);
   font-size: .625rem;
   text-decoration: none;
@@ -907,14 +972,14 @@ color: var(--basis-font-kleur);
 }
 
 #overzichtspagina main section:nth-of-type(2) ul li button:hover{
-  background-color: var(--buttons-hover-kleur);
+  background-color: var(--basis-hover-kleur);
   color: var(--basis-font-kleur);
   box-shadow: 0 .31rem .75rem .18rem rgb(0 0 0 / 12%);
   cursor: pointer;
 }
 
 #overzichtspagina main section:nth-of-type(2) ul li button:focus{
-  background-color: var(--buttons-hover-kleur);
+  background-color: var(--basis-hover-kleur);
   color: var(--basis-font-kleur);
   box-shadow: 0 .31rem .75rem .18rem rgb(0 0 0 / 12%);
 }
@@ -946,10 +1011,11 @@ color: var(--basis-font-kleur);
 }
 
 .active{
-  background-color: var(--buttons-kleur) !important;
+  background-color: var(--basis-kleur) !important;
   color: var(--extra-font-kleur) !important;
   border-radius: 50%;
 }
+
 
 
 
@@ -971,7 +1037,6 @@ color: var(--basis-font-kleur);
   text-align: left;
   padding: 0 0 1rem 0;
 }
-
 
 
 
@@ -1005,7 +1070,7 @@ color: var(--basis-font-kleur);
 }
 
 #overzichtspagina main section:nth-of-type(4) a{
-  background-color: var(--buttons-kleur);
+  background-color: var(--basis-kleur);
   color: var(--extra-font-kleur);
   font-size: .8rem;
   text-decoration: none;
@@ -1017,6 +1082,19 @@ color: var(--basis-font-kleur);
   text-transform: uppercase;
   letter-spacing: .11rem;
   font-weight: bold;
+}
+
+#overzichtspagina main section:nth-of-type(4) a:first-of-type:hover{
+  background-color: var(--roze-accent-kleur);
+  color: var(--basis-font-kleur);
+}
+
+#overzichtspagina main section:nth-of-type(4) a:first-of-type:focus{
+  border: 3px solid var(--roze-accent-kleur);
+}
+
+#overzichtspagina main section:nth-of-type(4) a:first-of-type:active{
+  border: 1px solid var(--basis-kleur);
 }
 
 
@@ -1044,6 +1122,12 @@ color: var(--basis-font-kleur);
   height: .875rem;
   margin: .44rem;
 }
+
+
+
+
+
+
 
 
 
@@ -1230,12 +1314,18 @@ color: var(--basis-font-kleur);
   /* uiterlijk van stekkieBox button aanpassen */
   #homepagina main > section:nth-of-type(1) nav a:nth-of-type(2){
     background-color: transparent;
-    border: 0.05rem solid var(--buttons-kleur);
+    border: 0.05rem solid var(--basis-kleur);
   }
 
   /* breedte van afbeeldingen "vind mijn rebel" */
   #homepagina main section:nth-of-type(3) ul li{
     width: 30%;
+  }
+
+
+  /* Stekjes pagina - minder marge tussen tekst en producten */
+   #overzichtspagina main > section:first-of-type{
+    margin-bottom: 2.5%;
   }
 }
 
@@ -1274,7 +1364,6 @@ color: var(--basis-font-kleur);
   #homepagina main > section:nth-of-type(3){
     padding: 5% 5%;
   }
-
 
 
   /* Stekjes pagina - slider krijgt margin ipv padding */
