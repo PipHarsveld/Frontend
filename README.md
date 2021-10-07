@@ -138,7 +138,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ## Toegankelijkheidstest (week 4)
 
-<details open>
+<details>
 <summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
