@@ -514,6 +514,7 @@ footer section:nth-of-type(2) img{
 #homepagina main section:nth-of-type(3) ul li{
   list-style: none;
   margin: 0;
+  width: 100%;
 }
 
 #homepagina main section:nth-of-type(3) ul li a{
@@ -522,7 +523,7 @@ footer section:nth-of-type(2) img{
 }
 
 #homepagina main section:nth-of-type(3) ul li a img{
-  width: 90%;
+  width: 100%;
   max-width: 24rem;
   margin: .625rem 0 .625rem 0;
 }
@@ -665,8 +666,16 @@ color: var(--basis-font-kleur);
 }
 
 #homepagina main section:nth-of-type(6) div article {
-  min-width: 100vw;
+  min-width: 100%;
 	padding: 1rem 5% 1rem 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#homepagina main section:nth-of-type(6) div article p:nth-of-type(2){
+  max-width: 30rem;
+  
 }
 
 @keyframes slideshow {
@@ -783,11 +792,15 @@ color: var(--basis-font-kleur);
 /* INTRODUCTIE PARAGRAAF */
 #overzichtspagina main > section:first-of-type{
   padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#overzichtspagina main section:first-of-type p{
+#overzichtspagina main > section:first-of-type p{
   text-align: center;
   margin: 0 1rem;
+  width: 45rem;
 }
 
 
@@ -922,14 +935,21 @@ color: var(--basis-font-kleur);
   color: var(--basis-font-kleur);
   text-decoration: none;
   padding: .56rem .9rem;
+  margin: 0 .25rem;
+  background-color: transparent;
+  border: none;
 }
 
-#overzichtspagina main section:nth-of-type(2) nav ol li button:focus{
-  background-color: var(--buttons-kleur);
+#overzichtspagina main section:nth-of-type(2) nav ol li button:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active{
+  background-color: var(--buttons-kleur) !important;
   color: var(--extra-font-kleur) !important;
   border-radius: 50%;
 }
-
 
 
 
@@ -951,6 +971,7 @@ color: var(--basis-font-kleur);
   text-align: left;
   padding: 0 0 1rem 0;
 }
+
 
 
 
@@ -978,6 +999,7 @@ color: var(--basis-font-kleur);
 
 #overzichtspagina main section:nth-of-type(4) img{
   width: 100%;
+  max-width: 30rem;
   margin: 3.5rem 0 0 0;
   line-height: 0;
 }
@@ -1080,6 +1102,11 @@ color: var(--basis-font-kleur);
 
   #homepagina main > section:nth-of-type(5){
     display: flex;
+  }
+
+  /* breedte van afbeeldingen "vind mijn rebel" */
+  #homepagina main section:nth-of-type(3) ul li{
+    width: 45%;
   }
 }
 
@@ -1205,15 +1232,32 @@ color: var(--basis-font-kleur);
     background-color: transparent;
     border: 0.05rem solid var(--buttons-kleur);
   }
+
+  /* breedte van afbeeldingen "vind mijn rebel" */
+  #homepagina main section:nth-of-type(3) ul li{
+    width: 30%;
+  }
 }
 
 
 @media (min-width: 80rem){ /* 1280px*/
-  /* content kan niet breder worden */
-  /* main{
-    padding: 0 10rem;
-  } */
-  
+  /* Grotere padding aan zijkanten */
+  header{
+    padding-right: 11.5% !important;
+    padding-left: 11.5% !important;
+  }
+
+  main > *{
+    padding-right: 11.5% !important;
+    padding-left: 11.5% !important;
+  }
+
+  footer{
+    padding-right: 11.5% !important;
+    padding-left: 11.5% !important;
+  }
+
+
   /* formaat en positie achtergrondafbeelding anders */
   #homepagina main > section:first-of-type{
     background-position: 0% 55%;
@@ -1229,5 +1273,15 @@ color: var(--basis-font-kleur);
   /* padding rondom "stekkie surprise" wordt kleiner */
   #homepagina main > section:nth-of-type(3){
     padding: 5% 5%;
+  }
+
+
+
+  /* Stekjes pagina - slider krijgt margin ipv padding */
+  #overzichtspagina main section:nth-of-type(2){
+    margin-right: 11.5% !important;
+    margin-left: 11.5% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }

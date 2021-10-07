@@ -65,10 +65,17 @@ buttonProductPagina2.addEventListener("click", naarVolgendePagina);
 function naarVorigePagina(){
   containerVanProducten.classList.add("vorigePagina");
   containerVanProducten.classList.remove("volgendePagina");
+
+  buttonProductPagina1.classList.add("active");
+  buttonProductPagina2.classList.remove("active");
 }
 
 function naarVolgendePagina(){
   containerVanProducten.classList.add("volgendePagina");
   containerVanProducten.classList.remove("vorigePagina");
+
+  buttonProductPagina2.classList.add("active");
+  buttonProductPagina1.classList.remove("active");
 }
+
 

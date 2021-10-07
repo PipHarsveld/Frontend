@@ -87,7 +87,7 @@ Hele homepage onder elkaar:
 
 ### Stand van zaken
 Het coderen is deze week vrij goed gegaan. Ik ben niet tegen al te grote problemen  
-gelopen en de eerste pagina begint nu echt al te lijken op de site van Plant Rebelz!  
+gelopen en de eerste pagina begint al een beetje te lijken op de site van Plant Rebelz.  
 Wel had ik wat problemen om de content in de roze balk (zie screenshot) zowel  
 horizontaal als verticaal te centreren, maar met wat hulp is dat nu wel gelukt :)  
 <img src="images/screenshot-roze-balk.PNG" width="275px" alt="screenshot van een roze balkje met content">
@@ -259,5 +259,7 @@ hier screenshot(s) van je eindresultaat
 8. Info twee headers: https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice#:~:text=Yes%20you%20can%20use%20multiple,but%20this%20is%20not%20required.
 9. Naslag animaties: https://www.w3schools.com/css/css3_animations.asp
 10. Laatste flex-item rechts uitlijnen: https://medium.com/@iamryanyu/how-to-align-last-flex-item-to-right-73512e4e5912
+11. Tabindex: https://webaim.org/techniques/keyboard/tabindex
+12. Volgorde veranderen voor screenreaders: https://stackoverflow.com/questions/52933690/responsive-ui-modify-reading-order-in-screen-readers
 
 </details>
