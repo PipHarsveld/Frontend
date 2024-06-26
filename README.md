@@ -3,7 +3,7 @@
 ## Je website
 
 ### De opdracht:
-Voor dit project heb ik de volgende website na gemaakt:
+Voor dit project heb ik de home- en stekjespagina van de volgende website nagemaakt:
 (https://www.plantrebelz.nl/)
 
 <details>
