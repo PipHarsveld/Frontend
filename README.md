@@ -1,7 +1,5 @@
 # Procesverslag
 
-## Je website
-
 ### De opdracht:
 Voor dit project heb ik de home- en stekjespagina van de website PlantRebelz nagemaakt, helaas staat deze website niet meer online.
 
