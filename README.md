@@ -1,44 +1,13 @@
 # Procesverslag
-Markdown is een simpele manier om HTML te schrijven.  
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
-
-
-
-
-
-## Jij
-
-<details open>
-<summary>uitwerken voor kick-off werkgroep</summary>
-
-### Auteur:
-Pip Harsveld
-
-#### Je startniveau:
-Rood
-
-#### Je focus:
-Responsive
-
-</details>
-
-
-
-
 
 ## Je website
 
-<details>
-<summary>uitwerken voor kick-off werkgroep</summary>
-
-### Je opdracht:
-link naar de website die ik ga maken:
+### De opdracht:
+Voor dit project heb ik de volgende website na gemaakt:
 (https://www.plantrebelz.nl/)
 
+<details>
+<summary>Screenshots</summary>
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home | Plant Rebelz  
 Viewport:  
@@ -57,39 +26,26 @@ Hele homepage onder elkaar:
 </details>
 
 
-
-
-
 ## Breakdownschets (week 1)
 
-<details>
-<summary>uitwerken na afloop 2e werkgroep</summary>
-
-### de homepagina: 
+### De homepagina: 
 <img src="images/breakdown-homepagina.jpg" width="375px" alt="breakdown van de homepagina">
 
-### de overzichtspagina: 
+### De overzichtspagina: 
 <img src="images/breakdown-stekjes.jpg" width="375px" alt="breakdown van de overzichtspagina">
 
-### een dynamisch deel (menu): 
+### Een dynamisch deel (menu): 
 <img src="images/breakdown-menu.jpg" width="375px" alt="breakdown van een dynamisch deel (het menu)">
-
-</details>
-
-
-
 
 
 ## Voortgang 1 (week 2)
-
-<details>
-<summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
 Het coderen is deze week vrij goed gegaan. Ik ben niet tegen al te grote problemen  
 gelopen en de eerste pagina begint al een beetje te lijken op de site van Plant Rebelz.  
 Wel had ik wat problemen om de content in de roze balk (zie screenshot) zowel  
 horizontaal als verticaal te centreren, maar met wat hulp is dat nu wel gelukt :)  
+
 <img src="images/screenshot-roze-balk.PNG" width="275px" alt="screenshot van een roze balkje met content">
 
 
@@ -102,16 +58,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - Andere tag gebruiken voor het euro-tekens
 - Er bestaan speciale tags voor reviews
 
-</details>
-
-
-
 
 
 ## Voortgang 2 (week 3)
-
-<details>
-<summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
 Ik ben deze week weer gestaag verder gegaan met het coderen. De eerste pagina is bijna  
@@ -120,7 +69,9 @@ Ik had nog wel wat moeite met de achtergrondafbeelding bij de link naar de googl
 reviews (zie afbeelding). In de les heb ik hier vragen over gesteld en nu is het gelukt.  
 Ook had ik wat ruzie met de line-height property. Ik had hem op de verkeerde manier  
 gebruikt waardoor alle elementen, en dus ook een afbeelding, een line-height kregen.
+
 <img src="images/screenshot-link-met-achtergrondafbeelding.PNG" width="275px" alt="screenshot van een link met een achtergrondafbeelding">  
+
 <img src="images/screenshot-code-link-met-achtergrondafbeelding.PNG" width="275px" alt="screenshot de bijbehorende code">
 
 ### Verslag van meeting
@@ -130,16 +81,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - Afbeelding en button in de vierde section centreren met flexbox en align items
 - Plaats nog dubbele quotes (" ") om de id heen. Zelfde geldt voor de url in css
 
-</details>
-
-
-
-
 
 ## Toegankelijkheidstest (week 4)
-
-<details>
-<summary>uitwerken na test in 8e voortgang</summary>
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
@@ -174,16 +117,8 @@ zichtbaar.
 
 Oplossing: De zwarte buttons een andere kleur border geven bij de focus state.
 
-</details>
-
-
-
-
 
 ## Voortgang 3 (week 4)
-
-<details>
-<summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
 Deze week was de eerste keer sinds het programmeren van deze site dat ik op het punt  
@@ -205,16 +140,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 - Reviewslider: de padding van de container (div) verwijderen en padding zetten op de reviews (articles) zelf zetten.
 
 
-</details>
-
-
-
-
 
 ## Eindgesprek (week 5)
-
-<details>
-<summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
 Meteen na het feedbackgesprek ging ik de puntjes verbeteren en liep ik tegen twee nieuwe  
@@ -249,16 +176,8 @@ Tablet:
 Laptop:  
 <img src="images/detailpagina_laptop.png" width="375px" alt="homepagina Plant Rebelz op laptop">  
 
-</details>
-
-
-
-
 
 ## Bronnenlijst
-
-<details open>
-<summary>continu bijhouden terwijl je werkt</summary>
 
 1. Iconen die gebruikt worden op de site van Plant Rebelz: https://themify.me/themify-icons
 2. Uitleg over rel="noopener": https://www.wplounge.nl/rel-noopener-links-wordpress/
@@ -275,5 +194,3 @@ Laptop:
 13. Info over timer in JS: https://www.w3schools.com/jsref/met_win_settimeout.asp
 14. HTML validator: https://validator.w3.org/
 15. CSS validator: https://jigsaw.w3.org/css-validator/validator
-
-</details>
