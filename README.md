@@ -3,11 +3,10 @@
 ## Je website
 
 ### De opdracht:
-Voor dit project heb ik de home- en stekjespagina van de volgende website nagemaakt:
-(https://www.plantrebelz.nl/)
+Voor dit project heb ik de home- en stekjespagina van de website PlantRebelz nagemaakt, helaas staat deze website niet meer online.
 
 <details>
-<summary>Screenshots</summary>
+<summary>Screenshots van plantrebelz.nl</summary>
 #### Screenshot(s) van de eerste pagina (small screen): 
 Home | Plant Rebelz  
 Viewport:  
